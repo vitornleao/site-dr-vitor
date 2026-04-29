@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, UserRound, ChevronRight, Instagram } from "lucide-react";
+import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, UserRound, ChevronRight } from "lucide-react";
 import "./style.css";
 
 const whatsappCMO = "https://wa.me/5562998288727";
@@ -42,7 +42,9 @@ function App() {
               </p>
               <div className="actions">
                 <a href={whatsappCMO} className="btn btn-primary"><MessageCircle size={18} /> Agendar pelo WhatsApp</a>
-                <a href={instagram} className="btn btn-secondary"><Instagram size={18} /> Instagram</a>
+                <a href={instagram} className="btn btn-secondary">
+  Instagram
+</a>
               </div>
             </div>
 
