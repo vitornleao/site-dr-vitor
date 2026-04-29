@@ -70,8 +70,8 @@ function App() {
 
               <div className="info-grid">
                 <div><span>CRM-GO</span><strong>22572</strong></div>
-                <div><span>CRM-DF</span><strong>25086</strong></div>
-                <div><span>Foco</span><strong>Joelho e MSK</strong></div>
+                <div><span>TEOT</span><strong>18877</strong></div>
+                <div><span>RQE</span><strong>16089</strong></div>
               </div>
             </div>
           </div>
