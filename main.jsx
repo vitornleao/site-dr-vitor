@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, UserRound, ChevronRight } from "lucide-react";
 import "./style.css";
 
-const whatsappCMO = "https://wa.me/5562998288727";
+const whatsappCMO = "https://wa.me/556298288727";
 const whatsappClinica = "https://wa.me/message/VQ5TYYTEYKVLA1";
 const instagram = "https://www.instagram.com/drvitornleao";
 
@@ -125,7 +125,7 @@ function App() {
               <h2>Dê o próximo passo para investigar sua dor com segurança.</h2>
               <p>Entre em contato para verificar disponibilidade de agenda e escolher o melhor local de atendimento.</p>
             </div>
-            <a href={whatsappCMO} className="btn btn-light"><MessageCircle size={18} /> Falar no WhatsApp</a>
+            <a href={whatsappClinica} className="link-action">Agendar na Clínica <ChevronRight size={16} /></a>
           </div>
         </section>
       </main>
