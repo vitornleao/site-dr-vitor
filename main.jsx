@@ -49,7 +49,7 @@ function App() {
             </div>
 
             <div className="hero-photo-card">
-              <img src="/images/dr-vitor.png" alt="Dr. Vitor Negreiro Leão" className="hero-photo" />
+              <img src="/dr-vitor.png" alt="Dr. Vitor Negreiro Leão" className="hero-photo" />
             </div>
           </div>
         </section>
