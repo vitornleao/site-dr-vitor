@@ -13,7 +13,7 @@ function App() {
       <header className="header">
         <div className="container header-inner">
           <div className="brand">
-            <img src="logo-header.png" /> alt="Logo Dr. Vitor Negreiro Leão" className="logo-header" />
+            <img src="logo-header.png" alt="Logo Dr. Vitor Negreiro Leão" className="logo-header" />
             <div className="brand-text">
               <strong>Dr. Vitor Negreiro Leão</strong>
               <span>Ortopedia • Joelho • @drvitornleao</span>
@@ -49,7 +49,7 @@ function App() {
             </div>
 
             <div className="hero-photo-card">
-              <img src="dr-vitor.png" /> alt="Dr. Vitor Negreiro Leão" className="hero-photo" />
+              <img src="dr-vitor.png" alt="Dr. Vitor Negreiro Leão" className="hero-photo" />
             </div>
           </div>
         </section>
@@ -57,7 +57,7 @@ function App() {
         <section id="sobre" className="section">
           <div className="container about-grid">
             <div className="about-photo-wrap">
-              <img src="dr-vitor.png" /> alt="Dr. Vitor Negreiro Leão" className="about-photo" />
+              <img src="dr-vitor.png" alt="Dr. Vitor Negreiro Leão" className="about-photo" />
             </div>
             <div className="card">
               <p className="section-kicker">Sobre o médico</p>
@@ -131,7 +131,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <img src="logo-footer.png" /> alt="Logo Dr. Vitor Negreiro Leão" />
+        <img src="logo-footer.png" alt="Logo Dr. Vitor Negreiro Leão" />
         <p>Instagram: <a href={instagram}>@drvitornleao</a></p>
         <p>© {new Date().getFullYear()} Dr. Vitor Negreiro Leão. CRM-GO 22572 • CRM-DF 25086</p>
       </footer>
