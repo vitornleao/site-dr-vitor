@@ -64,8 +64,7 @@ function App() {
               <p className="section-kicker">Sobre o médico</p>
               <h2>Sobre o Dr. Vitor</h2>
               <p>Médico ortopedista com formação em cirurgia do joelho e pós-graduado em ultrassonografia musculoesquelética.</p>
-              <p>Atua com foco no tratamento conservador e cirúrgico de lesões articulares, com ênfase em dor no joelho, lesões esportivas e desgaste articular.</p>
-              <p>Utiliza a ultrassonografia musculoesquelética como ferramenta complementar para diagnóstico mais preciso e acompanhamento clínico mais eficiente.</p>
+              <p>Atua com foco no diagnóstico, tratamento e acompanhamento de pacientes com dores musculoesqueléticas, com ênfase em dor no joelho, lesões esportivas e desgaste articular.</p>
               <p>Seu objetivo é oferecer um tratamento individualizado, baseado na causa da dor e nas necessidades de cada paciente, buscando redução da dor, melhora da função e retorno seguro às atividades do dia a dia e esportivas.</p>
 
               <div className="info-grid">
@@ -85,7 +84,7 @@ function App() {
               <div className="service-card">
                 <Activity />
                 <h3>Dor no joelho</h3>
-                <p>Avaliação de condropatia, artrose, dor anterior, sobrecarga articular e limitações funcionais.</p>
+                <p>Avaliação de condropatia, artrose, sobrecarga articular e limitações funcionais.</p>
               </div>
               <div className="service-card">
                 <Stethoscope />
