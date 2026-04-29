@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, UserRound, ChevronRight } from "lucide-react";
 import "./style.css";
 
-const whatsappCMO = "https://wa.me/556298288727";
 const whatsappClinica = "https://wa.me/message/VQ5TYYTEYKVLA1";
 const instagram = "https://www.instagram.com/drvitornleao";
 
@@ -27,7 +26,7 @@ function App() {
             <a href="#contato">Contato</a>
           </nav>
 
-          <a href={whatsappCMO} className="btn btn-primary">Agendar consulta</a>
+          <a href={whatsappClinica} className="btn btn-primary">Agendar consulta</a>
         </div>
       </header>
 
@@ -41,15 +40,17 @@ function App() {
                 Médico ortopedista com formação em cirurgia do joelho e pós-graduado em ultrassonografia musculoesquelética. Atua com foco no tratamento conservador e cirúrgico de lesões articulares, utilizando a ultrassonografia musculoesquelética como ferramenta complementar de diagnóstico e acompanhamento clínico.
               </p>
               <div className="actions">
-                <a href={whatsappCMO} className="btn btn-primary"><MessageCircle size={18} /> Agendar pelo WhatsApp</a>
+                <a href={whatsappClinica} className="btn btn-primary">
+                  <MessageCircle size={18} /> Agendar pelo WhatsApp
+                </a>
                 <a href={instagram} className="btn btn-secondary">
-  Instagram
-</a>
+                  Instagram
+                </a>
               </div>
             </div>
 
             <div className="hero-photo-card">
-              <img src="/logo-footer.png" alt="Dr. Vitor Negreiro Leão" className="hero-photo" />
+              <img src="/logo-footer.png" alt="Logo Dr. Vitor Negreiro Leão" className="hero-photo" />
             </div>
           </div>
         </section>
@@ -62,18 +63,11 @@ function App() {
             <div className="card">
               <p className="section-kicker">Sobre o médico</p>
               <h2>Sobre o Dr. Vitor</h2>
-              <p>
-                Médico ortopedista com formação em cirurgia do joelho e pós-graduado em ultrassonografia musculoesquelética.
-              </p>
-              <p>
-                Atua com foco no tratamento conservador e cirúrgico de lesões articulares, com ênfase em dor no joelho, lesões esportivas e desgaste articular.
-              </p>
-              <p>
-                Utiliza a ultrassonografia musculoesquelética como ferramenta complementar para diagnóstico mais preciso e acompanhamento clínico mais eficiente.
-              </p>
-              <p>
-                Seu objetivo é oferecer um tratamento individualizado, baseado na causa da dor e nas necessidades de cada paciente, buscando redução da dor, melhora da função e retorno seguro às atividades do dia a dia e esportivas.
-              </p>
+              <p>Médico ortopedista com formação em cirurgia do joelho e pós-graduado em ultrassonografia musculoesquelética.</p>
+              <p>Atua com foco no tratamento conservador e cirúrgico de lesões articulares, com ênfase em dor no joelho, lesões esportivas e desgaste articular.</p>
+              <p>Utiliza a ultrassonografia musculoesquelética como ferramenta complementar para diagnóstico mais preciso e acompanhamento clínico mais eficiente.</p>
+              <p>Seu objetivo é oferecer um tratamento individualizado, baseado na causa da dor e nas necessidades de cada paciente, buscando redução da dor, melhora da função e retorno seguro às atividades do dia a dia e esportivas.</p>
+
               <div className="info-grid">
                 <div><span>CRM-GO</span><strong>22572</strong></div>
                 <div><span>CRM-DF</span><strong>25086</strong></div>
@@ -88,9 +82,21 @@ function App() {
             <p className="section-kicker gold">Áreas de atuação</p>
             <h2>Cuidado especializado para diferentes causas de dor e limitação funcional.</h2>
             <div className="service-grid">
-              <div className="service-card"><Activity /><h3>Dor no joelho</h3><p>Avaliação de condropatia, artrose, dor anterior, sobrecarga articular e limitações funcionais.</p></div>
-              <div className="service-card"><Stethoscope /><h3>Lesões esportivas</h3><p>Investigação e manejo de lesões ligamentares, meniscais, tendíneas e retorno progressivo às atividades.</p></div>
-              <div className="service-card"><UserRound /><h3>Ultrassonografia MSK</h3><p>Exame dinâmico para avaliação de tendões, músculos, bursas, articulações e partes moles, quando indicado.</p></div>
+              <div className="service-card">
+                <Activity />
+                <h3>Dor no joelho</h3>
+                <p>Avaliação de condropatia, artrose, dor anterior, sobrecarga articular e limitações funcionais.</p>
+              </div>
+              <div className="service-card">
+                <Stethoscope />
+                <h3>Lesões esportivas</h3>
+                <p>Investigação e manejo de lesões ligamentares, meniscais, tendíneas e retorno progressivo às atividades.</p>
+              </div>
+              <div className="service-card">
+                <UserRound />
+                <h3>Ultrassonografia MSK</h3>
+                <p>Exame dinâmico para avaliação de tendões, músculos, bursas, articulações e partes moles, quando indicado.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -105,14 +111,16 @@ function App() {
                 <h3>Clínica Nara Brito</h3>
                 <p>Rua 19 de Julho, Qd 26, Lt 10, Casa 02, S/N, Setor Augusto José Valente, Posse-GO, 73900-000.</p>
                 <p><strong>WhatsApp:</strong> (62) 99818-0208</p>
-                <a href={whatsappClinica} className="link-action">Agendar na Clínica <ChevronRight size={16} /></a>
+                <a href={whatsappClinica} className="link-action">
+                  Agendar na Clínica <ChevronRight size={16} />
+                </a>
               </div>
+
               <div className="card location-card">
                 <CalendarDays className="icon-gold" />
                 <h3>Hospital CMO</h3>
                 <p>Rua Nazário Ribeiro, Quadra 23, Lote 05, Setor Augusto José Valente I, Posse-GO, 73900-000.</p>
-                <p><strong>WhatsApp:</strong> (62) 99828-8727</p>
-                <a href={whatsappCMO} className="link-action">Agendar no Hospital CMO <ChevronRight size={16} /></a>
+                <p><strong>Contato do Hospital CMO:</strong> (62) 99828-8727</p>
               </div>
             </div>
           </div>
@@ -123,9 +131,11 @@ function App() {
             <div>
               <p className="section-kicker gold">Agendamento</p>
               <h2>Dê o próximo passo para investigar sua dor com segurança.</h2>
-              <p>Entre em contato para verificar disponibilidade de agenda e escolher o melhor local de atendimento.</p>
+              <p>Para agendamentos, entre em contato pelo WhatsApp da Clínica Nara Brito.</p>
             </div>
-            <a href={whatsappClinica} className="link-action">Agendar na Clínica <ChevronRight size={16} /></a>
+            <a href={whatsappClinica} className="btn btn-light">
+              <MessageCircle size={18} /> Agendar na Clínica
+            </a>
           </div>
         </section>
       </main>
