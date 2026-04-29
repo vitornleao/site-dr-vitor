@@ -131,7 +131,7 @@ function App() {
             <div>
               <p className="section-kicker gold">Agendamento</p>
               <h2>Dê o próximo passo para investigar sua dor com segurança.</h2>
-              <p>Para agendamentos, entre em contato pelo WhatsApp da Clínica Nara Brito.</p>
+              <p>Entre em contato para verificar disponibilidade de agenda e escolher o melhor local de atendimento.</p>
             </div>
             <a href={whatsappClinica} className="btn btn-light">
               <MessageCircle size={18} /> Agendar na Clínica
