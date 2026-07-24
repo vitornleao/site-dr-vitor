@@ -178,7 +178,7 @@ function App() {
                 <div className="map-wrap">
                   <iframe
                     title="Mapa Clínica Nara Brito"
-                    src="https://www.google.com/maps?q=Rua+19+de+Julho+Qd+26+Setor+Augusto+Jos%C3%A9+Valente+Posse+GO+73900-000&output=embed"
+                    src="https://www.google.com/maps?q=-14.089316,-46.363125&output=embed"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
