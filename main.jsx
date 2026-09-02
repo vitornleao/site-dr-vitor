@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, UserRound, ChevronRight, Menu, X, GraduationCap, ShieldCheck } from "lucide-react";
+import { CalendarDays, MapPin, MessageCircle, Stethoscope, Activity, ChevronRight, Menu, X, GraduationCap, ShieldCheck, Syringe, Target, HeartPulse, Waves } from "lucide-react";
 import "./style.css";
 
 const whatsappClinica = "https://wa.me/message/VQ5TYYTEYKVLA1";
@@ -22,6 +22,22 @@ const faq = [
   {
     q: "Como funciona a ultrassonografia musculoesquelética?",
     a: "É um exame dinâmico, realizado no consultório quando indicado, para avaliar tendões, músculos, bursas e articulações em tempo real, ajudando no diagnóstico e no acompanhamento.",
+  },
+  {
+    q: "O que é uma infiltração guiada por ultrassom?",
+    a: "É a aplicação de medicamento na articulação ou ao redor de tendões e bursas com o auxílio do ultrassom, que permite visualizar a agulha e a estrutura em tempo real, aumentando a precisão do procedimento.",
+  },
+  {
+    q: "Quando a infiltração é indicada?",
+    a: "A indicação é definida após avaliação clínica e de imagem, de forma individualizada. Costuma ser considerada em quadros como artrose, tendinopatias e bursites, quando as medidas iniciais não são suficientes.",
+  },
+  {
+    q: "Como é o procedimento? Preciso de preparo ou repouso?",
+    a: "É realizado no consultório, com anestesia local quando necessário, e costuma ser rápido. As orientações de preparo e de cuidados após o procedimento são passadas na consulta, conforme cada caso.",
+  },
+  {
+    q: "O atendimento é só para joelho?",
+    a: "O foco é o joelho, mas os procedimentos também são realizados em outras articulações, conforme avaliação.",
   },
 ];
 
@@ -45,6 +61,7 @@ function App() {
             <a href="#sobre">Sobre</a>
             <a href="#atuacao">Atuação</a>
             <a href="#locais">Atendimento</a>
+            <a href="#dor">Dor</a>
             <a href="#faq">Dúvidas</a>
             <a href="#contato">Contato</a>
           </nav>
@@ -61,6 +78,7 @@ function App() {
             <a href="#sobre" onClick={closeMenu}>Sobre</a>
             <a href="#atuacao" onClick={closeMenu}>Atuação</a>
             <a href="#locais" onClick={closeMenu}>Atendimento</a>
+            <a href="#dor" onClick={closeMenu}>Dor</a>
             <a href="#faq" onClick={closeMenu}>Dúvidas</a>
             <a href="#contato" onClick={closeMenu}>Contato</a>
             <a href={whatsappClinica} target="_blank" rel="noopener noreferrer" className="btn btn-primary" onClick={closeMenu}>Agende sua consulta</a>
@@ -72,9 +90,9 @@ function App() {
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="badge">Ortopedia especializada</div>
+              <div className="badge">Ortopedia • Joelho • Dor</div>
               <h1>Tratamento especializado para dor no joelho, lesões esportivas e desgaste articular.</h1>
-              <p>Ortopedista com foco em joelho, diagnóstico preciso e tratamento individualizado para retorno seguro às atividades.</p>
+              <p>Ortopedista com foco em joelho, diagnóstico preciso e tratamento individualizado — incluindo tratamento conservador da dor e infiltrações guiadas por ultrassom, no joelho e em outras articulações, quando indicadas.</p>
 
               <div className="actions">
                 <a href={whatsappClinica} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -156,10 +174,51 @@ function App() {
               </div>
 
               <div className="service-card">
-                <UserRound />
-                <h3>Ultrassonografia MSK</h3>
-                <p>Exame dinâmico para avaliação de tendões, músculos, bursas, articulações e partes moles, quando indicado.</p>
+                <HeartPulse />
+                <h3>Tratamento conservador da dor</h3>
+                <p>Abordagem que prioriza opções não cirúrgicas — medicação, reabilitação, ajuste de carga e procedimentos guiados quando indicados — com acompanhamento individualizado.</p>
               </div>
+
+              <div className="service-card">
+                <Syringe />
+                <h3>Infiltrações guiadas por ultrassom</h3>
+                <p>Corticoide, ácido hialurônico, ortobiológicos e bloqueios aplicados com guia de imagem em tempo real, no joelho e em outras articulações.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="dor" className="section">
+          <div className="container">
+            <p className="section-kicker">Tratamento conservador da dor</p>
+            <h2>Tratar a dor com precisão, priorizando o caminho conservador.</h2>
+            <p className="dor-intro">A conduta começa pela avaliação clínica e pelo ultrassom musculoesquelético. A partir do diagnóstico, são consideradas as opções conservadoras — medicação, reabilitação e ajuste de carga — e, quando indicado, procedimentos guiados por imagem, sempre com acompanhamento. O foco é o joelho, mas os procedimentos também são realizados em outras articulações, conforme avaliação.</p>
+
+            <div className="steps">
+              <div className="step"><span className="step-n">01</span><strong>Avaliação</strong><p>Consulta e exame clínico detalhado.</p></div>
+              <div className="step"><span className="step-n">02</span><strong>Diagnóstico por imagem</strong><p>Ultrassom dinâmico no consultório, quando indicado.</p></div>
+              <div className="step"><span className="step-n">03</span><strong>Procedimento guiado</strong><p>Realizado apenas se houver indicação após a avaliação.</p></div>
+              <div className="step"><span className="step-n">04</span><strong>Acompanhamento</strong><p>Reavaliação e plano individualizado de seguimento.</p></div>
+            </div>
+
+            <div className="proc-grid">
+              <div className="card proc-card"><Syringe /><h3>Infiltração com corticoide</h3><p>Aplicação de anti-inflamatório na articulação ou ao redor de tendões e bursas, guiada por ultrassom, quando indicada após avaliação.</p></div>
+              <div className="card proc-card"><Activity /><h3>Viscossuplementação (ácido hialurônico)</h3><p>Aplicação intra-articular de ácido hialurônico, indicada em casos selecionados de artrose e condropatia.</p></div>
+              <div className="card proc-card"><HeartPulse /><h3>Ortobiológicos — aspirado de medula óssea (BMA)</h3><p>Uso de concentrado celular obtido da própria medula óssea do paciente, em lesões articulares e tendíneas selecionadas, conforme indicação.</p></div>
+              <div className="card proc-card"><Target /><h3>Bloqueios, hidrodissecção e agulhamento</h3><p>Procedimentos guiados por ultrassom para dor de origem nervosa, tendínea ou muscular, com indicação individualizada.</p></div>
+              <div className="card proc-card"><Waves /><h3>Terapia por ondas de choque</h3><p>Tratamento não invasivo com ondas acústicas, indicado em tendinopatias e algumas dores crônicas.</p></div>
+              <div className="card proc-card"><Syringe /><h3>Proloterapia</h3><p>Aplicação de solução que estimula a resposta de reparo em ligamentos e tendões, em casos selecionados.</p></div>
+            </div>
+
+            <div className="credentials dor-callout">
+              <p className="credentials-title"><Target size={18} /> Guiado por ultrassom</p>
+              <p className="callout-text">Nos procedimentos com agulha, a guia por ultrassom permite visualizar a agulha e a estrutura em tempo real, aumentando a precisão da aplicação.</p>
+            </div>
+
+            <div className="actions">
+              <a href={whatsappClinica} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <MessageCircle size={18} /> Agende sua avaliação
+              </a>
             </div>
           </div>
         </section>
