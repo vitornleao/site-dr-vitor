@@ -251,7 +251,8 @@ function App() {
       <footer className="lp-footer">
         <div>Dr. Vitor Negreiro Leão • CRM-GO 22572 • CRM-DF 25086 • RQE 16089</div>
         <div>Clínica Nara Brito — Rua 19 de Julho, Qd 26, Lt 10, Casa 02, Setor Augusto José Valente, Posse-GO</div>
-        <div>© {new Date().getFullYear()} Dr. Vitor Negreiro Leão</div>
+        <div>{"LEAO & CARAZZAI SERVICOS MEDICOS LTDA • CNPJ 66.005.329/0001-53"}</div>
+        <div>© {new Date().getFullYear()} — Todos os direitos reservados</div>
       </footer>
 
       <a href={wa} target="_blank" rel="noopener noreferrer" className="whatsapp-float" aria-label="Agende pelo WhatsApp">
