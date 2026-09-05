@@ -71,7 +71,7 @@ function App() {
             <div className="hero-copy">
               <div className="badge">Infiltração guiada por ultrassom • Posse-GO</div>
               <h1>Tratamento da dor no joelho com precisão: infiltração guiada por ultrassom, quando indicada.</h1>
-              <p>Avaliação especializada e condução do seu caso dentro de um plano de acompanhamento individualizado — com ultrassom no consultório e procedimentos guiados por imagem, no joelho e em outras articulações, quando indicados.</p>
+              <p>Avaliação especializada, ultrassom no consultório e um plano de acompanhamento individualizado — no joelho e em outras articulações.</p>
 
               <div className="actions">
                 <a href={wa} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -98,6 +98,7 @@ function App() {
 
         <section className="seals-section">
           <div className="container">
+            <p className="seals-title">Formação e titulação</p>
             <div className="seals">
               <div className="seal"><Award /><strong>Fellowship em Cirurgia do Joelho</strong><span>Hospital HOME — FIFA Medical Centre of Excellence</span></div>
               <div className="seal"><BadgeCheck /><strong>TEOT 18877</strong><span>Título de Especialista em Ortopedia</span></div>
@@ -249,6 +250,10 @@ function App() {
       </main>
 
       <footer className="lp-footer">
+        <div className="lp-site-link">
+          Quer conhecer todo o trabalho?{" "}
+          <a href="https://drvitornleao.com.br/" target="_blank" rel="noopener noreferrer">Visite o site completo</a>
+        </div>
         <div>Dr. Vitor Negreiro Leão • CRM-GO 22572 • CRM-DF 25086 • RQE 16089</div>
         <div>Clínica Nara Brito — Rua 19 de Julho, Qd 26, Lt 10, Casa 02, Setor Augusto José Valente, Posse-GO</div>
         <div>{"LEAO & CARAZZAI SERVICOS MEDICOS LTDA • CNPJ 66.005.329/0001-53"}</div>
