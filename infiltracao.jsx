@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { MessageCircle, ShieldCheck, Syringe, Target, HeartPulse, Waves, Activity, Stethoscope, Crosshair, ChevronRight } from "lucide-react";
+import { MessageCircle, ShieldCheck, Syringe, Target, HeartPulse, Waves, Activity, Stethoscope, Crosshair, ChevronRight, Award, BadgeCheck } from "lucide-react";
 import "./style.css";
 import "./infiltracao.css";
 
@@ -92,6 +92,17 @@ function App() {
           </div>
         </section>
 
+        <section className="seals-section">
+          <div className="container">
+            <div className="seals">
+              <div className="seal"><Award /><strong>Fellowship em Cirurgia do Joelho</strong><span>Hospital HOME — FIFA Medical Centre of Excellence</span></div>
+              <div className="seal"><BadgeCheck /><strong>TEOT 18877</strong><span>Título de Especialista em Ortopedia</span></div>
+              <div className="seal"><ShieldCheck /><strong>RQE 16089</strong><span>Registro de Qualificação de Especialista</span></div>
+              <div className="seal"><Stethoscope /><strong>SBOT e SBCJ</strong><span>Membro das sociedades</span></div>
+            </div>
+          </div>
+        </section>
+
         <section className="section">
           <div className="container">
             <p className="section-kicker">Para quem é</p>
@@ -173,7 +184,11 @@ function App() {
                   <li>Pós-graduação em Ultrassonografia Musculoesquelética — CETRUS, São Paulo</li>
                   <li>Membro da SBOT e da SBCJ • CRM-GO 22572 • RQE 16089</li>
                 </ul>
-                <a href="/" className="lp-link">Conheça o site completo</a>
+                <div className="actions">
+                  <a href={wa} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <MessageCircle size={18} /> Agendar avaliação pelo WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +226,7 @@ function App() {
       <footer className="lp-footer">
         <div>Dr. Vitor Negreiro Leão • CRM-GO 22572 • CRM-DF 25086 • RQE 16089</div>
         <div>Clínica Nara Brito — Rua 19 de Julho, Qd 26, Lt 10, Casa 02, Setor Augusto José Valente, Posse-GO</div>
-        <div><a href="/">drvitornleao.com.br</a> • © {new Date().getFullYear()} Dr. Vitor Negreiro Leão</div>
+        <div>© {new Date().getFullYear()} Dr. Vitor Negreiro Leão</div>
       </footer>
 
       <a href={wa} target="_blank" rel="noopener noreferrer" className="whatsapp-float" aria-label="Agende pelo WhatsApp">
