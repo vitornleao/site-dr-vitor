@@ -1,0 +1,4 @@
+# Redirecionamentos (Netlify). Espelham as regras de vercel.json.
+# Parâmetros de consulta (utm_source etc.) são preservados.
+/posse         /joelho   302
+/infiltracao   /joelho   301
