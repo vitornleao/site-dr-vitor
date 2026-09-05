@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/posse", "destination": "/joelho", "permanent": false },
+    { "source": "/infiltracao", "destination": "/joelho", "permanent": true }
+  ]
 }

@@ -1,4 +1,4 @@
-/* Landing page /infiltracao — só o que não existe em style.css */
+/* Landing page /joelho (atalho /posse) — só o que não existe em style.css */
 
 :root {
   --wa: #25D366;    /* verde WhatsApp */
@@ -29,7 +29,10 @@
 }
 @media (prefers-reduced-motion: reduce) { .lp .whatsapp-float { animation: none; } }
 
-/* ===== Topo escuro: autoridade e contraste máximo para o botão ===== */
+/* ===== Topo escuro contínuo: cabeçalho e hero no mesmo azul-marinho (sem a faixa creme) ===== */
+.lp .header { background: rgba(15,39,66,.94); border-bottom: 1px solid rgba(255,255,255,.08); }
+.lp .brand-text strong { color: #fff; }
+.lp .brand-text span { color: rgba(255,255,255,.62); }
 .lp .hero { background: var(--blue); }
 .lp .hero:before { background: rgba(176,141,87,.20); }
 .lp .hero h1 { color: #fff; }

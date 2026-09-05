@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { MessageCircle, ShieldCheck, Syringe, Target, HeartPulse, Waves, Activity, Stethoscope, Crosshair, ChevronRight, Award, BadgeCheck, ClipboardList } from "lucide-react";
 import "./style.css";
-import "./infiltracao.css";
+import "./joelho.css";
 
 const CLINIC_PHONE = "5562998180208"; // WhatsApp da Clínica Nara Brito: (62) 99818-0208
 
