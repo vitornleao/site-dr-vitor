@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { MessageCircle, ShieldCheck, Syringe, Target, HeartPulse, Waves, Activity, Stethoscope, Crosshair, ChevronRight, Award, BadgeCheck } from "lucide-react";
+import { MessageCircle, ShieldCheck, Syringe, Target, HeartPulse, Waves, Activity, Stethoscope, Crosshair, ChevronRight, Award, BadgeCheck, ClipboardList } from "lucide-react";
 import "./style.css";
 import "./infiltracao.css";
 
@@ -28,8 +28,12 @@ const faq = [
     a: "A indicação é definida após avaliação clínica e de imagem, de forma individualizada — em geral quando as medidas iniciais não foram suficientes, em quadros como artrose, tendinopatias e bursites.",
   },
   {
+    q: "Como funciona o acompanhamento?",
+    a: "Depois da avaliação inicial, o caso passa a ser conduzido dentro de um plano individualizado: diagnóstico por imagem, procedimentos quando indicados, retornos programados e ajuste da conduta conforme a evolução.",
+  },
+  {
     q: "Quantas sessões são necessárias?",
-    a: "Depende do quadro e do procedimento escolhido. O plano, incluindo o número de aplicações e o acompanhamento, é definido na avaliação.",
+    a: "Depende do quadro e da conduta definida. O número de aplicações e a frequência dos retornos fazem parte do plano de acompanhamento, definido a partir da avaliação.",
   },
   {
     q: "Preciso de encaminhamento? Atende convênio?",
@@ -67,7 +71,7 @@ function App() {
             <div className="hero-copy">
               <div className="badge">Infiltração guiada por ultrassom • Posse-GO</div>
               <h1>Tratamento da dor no joelho com precisão: infiltração guiada por ultrassom, quando indicada.</h1>
-              <p>Avaliação especializada, ultrassom no consultório e procedimentos guiados por imagem — no joelho e em outras articulações — com acompanhamento individualizado.</p>
+              <p>Avaliação especializada e condução do seu caso dentro de um plano de acompanhamento individualizado — com ultrassom no consultório e procedimentos guiados por imagem, no joelho e em outras articulações, quando indicados.</p>
 
               <div className="actions">
                 <a href={wa} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -120,12 +124,33 @@ function App() {
         <section className="section dark-section">
           <div className="container">
             <p className="section-kicker gold">Como funciona</p>
-            <h2>Do primeiro contato ao acompanhamento.</h2>
+            <h2>Da avaliação ao acompanhamento do seu caso.</h2>
             <div className="steps">
-              <div className="step"><span className="step-n">01</span><strong>Avaliação</strong><p>Consulta e exame clínico detalhado.</p></div>
-              <div className="step"><span className="step-n">02</span><strong>Diagnóstico por imagem</strong><p>Ultrassom dinâmico no consultório, quando indicado.</p></div>
-              <div className="step"><span className="step-n">03</span><strong>Procedimento guiado</strong><p>Realizado apenas se houver indicação após a avaliação.</p></div>
-              <div className="step"><span className="step-n">04</span><strong>Acompanhamento</strong><p>Reavaliação e plano individualizado de seguimento.</p></div>
+              <div className="step"><span className="step-n">01</span><strong>Avaliação inicial</strong><p>Consulta e exame clínico para entender a origem da sua dor.</p></div>
+              <div className="step"><span className="step-n">02</span><strong>Plano de acompanhamento</strong><p>A partir da avaliação, é definido um plano individualizado para o seu caso.</p></div>
+              <div className="step"><span className="step-n">03</span><strong>Diagnóstico e procedimentos</strong><p>Ultrassom e procedimentos guiados acontecem dentro do plano, quando indicados.</p></div>
+              <div className="step"><span className="step-n">04</span><strong>Reavaliação e ajuste</strong><p>Retornos programados para acompanhar a evolução e ajustar a conduta.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <p className="section-kicker">O acompanhamento</p>
+            <h2>Cuidar da dor é um processo, não um episódio isolado.</h2>
+            <p className="dor-intro">Depois da avaliação inicial, o seu caso passa a ser conduzido dentro de um plano de acompanhamento individualizado. É nele que entram o diagnóstico por imagem, os procedimentos quando indicados e os retornos — com a conduta sendo revista conforme a sua evolução.</p>
+            <div className="proc-grid">
+              <div className="card proc-card"><Activity /><h3>Diagnóstico por imagem</h3><p>Ultrassonografia musculoesquelética no consultório, para esclarecer a origem da dor.</p></div>
+              <div className="card proc-card"><ClipboardList /><h3>Plano individualizado</h3><p>Definição da conduta de acordo com o seu caso, sua rotina e seus objetivos.</p></div>
+              <div className="card proc-card"><Syringe /><h3>Procedimentos quando indicados</h3><p>Infiltrações e demais procedimentos realizados dentro do plano, com guia de imagem.</p></div>
+              <div className="card proc-card"><BadgeCheck /><h3>Retornos programados</h3><p>Consultas de acompanhamento para avaliar a evolução ao longo do tratamento.</p></div>
+              <div className="card proc-card"><Target /><h3>Ajuste da conduta</h3><p>O plano é revisto e ajustado conforme a resposta observada em cada retorno.</p></div>
+              <div className="card proc-card"><Stethoscope /><h3>Orientação continuada</h3><p>Orientações sobre carga, atividade física e cuidados no dia a dia.</p></div>
+            </div>
+            <div className="actions">
+              <a href={wa} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <MessageCircle size={18} /> Agendar avaliação pelo WhatsApp
+              </a>
             </div>
           </div>
         </section>
