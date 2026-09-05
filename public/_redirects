@@ -2,3 +2,5 @@
 # Parâmetros de consulta (utm_source etc.) são preservados.
 /posse         /joelho   302
 /infiltracao   /joelho   301
+# Foto antiga (PNG de 7,5 MB) substituída pela versão otimizada
+/dr-vitor.png  /dr-vitor.jpg  301

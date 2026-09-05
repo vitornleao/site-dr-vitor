@@ -10,7 +10,8 @@ const CLINIC_PHONE = "5562998180208"; // WhatsApp da Clínica Nara Brito: (62) 9
 function whatsappUrl() {
   let origem = "";
   try {
-    const src = (new URLSearchParams(window.location.search).get("utm_source") || "").toLowerCase();
+    // Tolerante a pontuação colada no link (ex.: "bio." ou "instagram,") e a maiúsculas.
+    const src = (new URLSearchParams(window.location.search).get("utm_source") || "").toLowerCase().replace(/[^a-z0-9_-]/g, "");
     const nomes = { instagram: "Instagram", meta: "Instagram", facebook: "Instagram", google: "Google", bio: "link da bio", whatsapp: "WhatsApp" };
     if (src) origem = ` (origem: ${nomes[src] || src})`;
   } catch (e) {}
@@ -87,7 +88,7 @@ function App() {
             </div>
 
             <div className="hero-photo-card">
-              <img src="/dr-vitor.png" alt="Dr. Vitor Negreiro Leão, ortopedista" className="hero-photo" />
+              <img src="/dr-vitor.jpg" alt="Dr. Vitor Negreiro Leão, ortopedista" className="hero-photo" />
               <div className="hero-photo-caption">
                 <strong>Dr. Vitor Negreiro Leão</strong>
                 <span>Ortopedia • Joelho • Dor</span>
@@ -202,7 +203,7 @@ function App() {
             <p className="section-kicker">Quem vai te atender</p>
             <h2>Dr. Vitor Negreiro Leão</h2>
             <div className="lp-doctor">
-              <img src="/dr-vitor.png" alt="Dr. Vitor Negreiro Leão" />
+              <img src="/dr-vitor.jpg" alt="Dr. Vitor Negreiro Leão" />
               <div>
                 <p>Ortopedista com foco em joelho e em tratamento conservador da dor, com formação em cirurgia do joelho e em ultrassonografia musculoesquelética.</p>
                 <ul>

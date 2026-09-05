@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/posse", "destination": "/joelho", "permanent": false },
-    { "source": "/infiltracao", "destination": "/joelho", "permanent": true }
+    { "source": "/infiltracao", "destination": "/joelho", "permanent": true },
+    { "source": "/dr-vitor.png", "destination": "/dr-vitor.jpg", "permanent": true }
   ]
 }

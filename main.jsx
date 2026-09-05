@@ -111,7 +111,7 @@ function App() {
             </div>
 
             <div className="hero-photo-card">
-              <img src="/dr-vitor.png" alt="Dr. Vitor Negreiro Leão, ortopedista" className="hero-photo" />
+              <img src="/dr-vitor.jpg" alt="Dr. Vitor Negreiro Leão, ortopedista" className="hero-photo" />
               <div className="hero-photo-caption">
                 <strong>Dr. Vitor Negreiro Leão</strong>
                 <span>Ortopedia • Joelho</span>
